@@ -1,16 +1,18 @@
 // console.log('checked');
-let users: {
+interface IUser {
     id: number;
     name: string;
     age: number;
-}[] = []
+}
 
-let user1 = {
+let users :IUser[] = []
+
+let user1 :IUser = {
   id: 1,
   name: 'AbuKawSar',
-  age: 23
-}
-let user2 = {
+  age: 23,
+};
+let user2 :IUser = {
   id: 2,
   name: 'AbuKawSar2',
   age: 23
@@ -20,7 +22,7 @@ users.push(user1);
 users.push(user2);
 // console.log(users)
 
-const showUserInfo = (user: { id: number; name: string; age: number }) => {
+const showUserInfo = (user: IUser) => {
   console.log(`userId = ${user.id}`)
 };
 

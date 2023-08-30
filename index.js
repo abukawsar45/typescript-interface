@@ -1,9 +1,8 @@
-// console.log('checked');
 var users = [];
 var user1 = {
     id: 1,
     name: 'AbuKawSar',
-    age: 23
+    age: 23,
 };
 var user2 = {
     id: 2,
